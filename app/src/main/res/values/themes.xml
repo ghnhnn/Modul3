@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.KonversiMataUang" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Text input fields -->
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+        <!-- For radio buttons -->
+        <item name="radioButtonStyle">@style/Widget.KonversiMataUang.CompoundButton.RadioButton</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green_65</item>
+        <item name="colorPrimaryVariant">@color/green_95</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/yellow_8d</item>
+        <item name="colorSecondaryVariant">@color/yellow_bf</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

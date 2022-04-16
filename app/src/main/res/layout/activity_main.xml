@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/matauang_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/mata_uang"
+        app:layout_constraintTop_toBottomOf="@+id/mata_uang">
+
+        <RadioButton
+            android:id="@+id/euro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Euro" />
+
+        <RadioButton
+            android:id="@+id/dollar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="US Dollar" />
+
+        <RadioButton
+            android:id="@+id/yen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Japanese Yen" />
+
+        <RadioButton
+            android:id="@+id/riyal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saudi Riyal" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@id/mata_uang"
+        app:layout_constraintEnd_toStartOf="@+id/mata_uang"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/mata_uang"
+        app:layout_constraintVertical_bias="0.666"
+        app:srcCompat="@drawable/money" />
+
+    <TextView
+        android:id="@+id/mata_uang"
+        android:layout_width="wrap_content"
+        style="@style/Widget.KoversiMataUang.TextView"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:text="Pilih Mata Uang?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_plain_text_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/nilai_mata_uang"
+        app:layout_constraintEnd_toStartOf="@+id/nilai_mata_uang"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nilai_mata_uang"
+        app:layout_constraintVertical_bias="0.593"
+        app:srcCompat="@drawable/konversi" />
+
+    <Button
+        android:id="@+id/konversi_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Konversi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nilai_mata_uang"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <TextView
+        android:id="@+id/hasil"
+        style="@style/Widget.KoversiMataUang.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="Nilai Rupiah: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/konversi_button" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nilai_mata_uang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nilai Mata Uang"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon_plain_text_input"
+        app:layout_constraintStart_toStartOf="@id/matauang_options"
+        app:layout_constraintTop_toBottomOf="@id/matauang_options">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/plain_text_input_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

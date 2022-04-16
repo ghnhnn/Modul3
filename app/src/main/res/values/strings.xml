@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Konversi Mata Uang</string>
+    <string name="tipe_mata_uang">Pilih Mata Uang?</string>
+    <string name="tipe_euro">Euro</string>
+    <string name="tipe_dollar">US Dollar</string>
+    <string name="tipe_yen">Japanese Yen</string>
+    <string name="tipe_riyal">Saudi Riyal</string>
+    <string name="konversi">Konversi</string>
+    <string name="hasil_konversi">Nilai Rupiah: %s</string>
+</resources>
